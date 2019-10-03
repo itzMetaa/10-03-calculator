@@ -7,22 +7,30 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edermény:"></TextView>
+        android:text="Edermény:"
+        android:id="@+id/Eredmeny2"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        ></TextView>
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="placeholder reredmenys"></TextView>
+        android:text="placeholder reredmenys"
+        android:id="@+id/Eredmeny"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Eredmeny2"
+        android:textSize="30dp"></TextView>
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-
-            tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="209dp">
+            android:id="@+id/line1"
+            android:layout_below="@+id/Eredmeny"
+            android:layout_centerHorizontal="true">
 
             <Button
                 android:layout_width="wrap_content"
@@ -37,16 +45,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="78dp"
                 android:text="3"></Button>
-
         </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="209dp">
+        android:id="@+id/line2"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true">
 
         <Button
             android:layout_width="wrap_content"
@@ -61,16 +68,15 @@
             android:layout_width="wrap_content"
             android:layout_height="78dp"
             android:text="3"></Button>
-
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="209dp">
+        android:id="@+id/line3"
+        android:layout_below="@+id/line2"
+        android:layout_centerHorizontal="true">
 
         <Button
             android:layout_width="wrap_content"
@@ -85,16 +91,15 @@
             android:layout_width="wrap_content"
             android:layout_height="78dp"
             android:text="3"></Button>
-
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="209dp">
+        android:id="@+id/line4"
+        android:layout_below="@+id/line3"
+        android:layout_centerHorizontal="true">
 
         <Button
             android:layout_width="wrap_content"
@@ -109,33 +114,13 @@
             android:layout_width="wrap_content"
             android:layout_height="78dp"
             android:text="3"></Button>
-
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="209dp">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="78dp"
-            android:text="1"></Button>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="78dp"
-            android:text="2"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="78dp"
-            android:text="3"></Button>
-
-    </LinearLayout>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:layout_centerHorizontal="true"></Button>
 
 
 </RelativeLayout>
